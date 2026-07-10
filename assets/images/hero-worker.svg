@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" role="img">
+<rect width="1000" height="1000" fill="#dce9e4"/>
+
+<circle cx="500" cy="300" r="180" fill="#f2c6a3"/>
+<path d="M310 310c10-155 86-246 196-246 120 0 196 88 202 246z" fill="#f8f6ee"/>
+<path d="M305 285h400v62H305z" fill="#0d4b3f"/>
+<path d="M350 176c28-94 84-142 153-142 75 0 132 47 160 142z" fill="#ffffff"/>
+<path d="M295 330c70-20 135-29 207-29 75 0 148 10 218 31l-12 61c-70-20-137-29-205-29-72 0-138 9-199 27z" fill="#ffffff"/>
+<path d="M273 1000c18-270 103-430 227-430s213 160 228 430z" fill="#153f51"/>
+<path d="M408 475c19 23 48 35 92 35 43 0 75-12 97-36v120H408z" fill="#dfa57c"/>
+<path d="M291 676c83-76 150-111 209-111 64 0 136 36 215 111l-41 324H326z" fill="#164556"/>
+<path d="M357 701h286v38H357z" fill="#f4f5ef" opacity=".8"/>
+<circle cx="440" cy="304" r="14" fill="#17241f"/>
+<circle cx="563" cy="304" r="14" fill="#17241f"/>
+<path d="M450 388c31 22 68 22 101 0" fill="none" stroke="#8f4f37" stroke-width="12" stroke-linecap="round"/>
+<text x="500" y="250" text-anchor="middle" font-family="Arial" font-size="48" font-weight="800" fill="#0d4b3f">TAKERU</text>
+
+</svg>
