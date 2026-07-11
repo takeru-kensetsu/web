@@ -964,3 +964,18 @@ section { scroll-margin-top: 88px; }
     text-align: left;
   }
 }
+
+
+/* Since / powered by credit */
+.footer-credit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: .45em;
+  flex-wrap: wrap;
+}
+@media (max-width: 760px) {
+  .footer-credit {
+    justify-content: flex-start;
+  }
+}
