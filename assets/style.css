@@ -831,3 +831,105 @@ section { scroll-margin-top: 88px; }
   .hero-logo-badge img { width: 58px; height: 58px; }
   .hero-logo-badge strong { font-size: 14px; }
 }
+
+
+/* Official company information */
+.permit-badge {
+  margin-top: 32px;
+  padding: 20px 22px;
+  border-left: 4px solid var(--lime);
+  background: rgba(255,255,255,.08);
+}
+.permit-badge small {
+  display: block;
+  color: var(--lime);
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .16em;
+}
+.permit-badge strong {
+  display: block;
+  margin-top: 5px;
+  font-size: 16px;
+  letter-spacing: .045em;
+}
+.permit-badge span {
+  display: block;
+  margin-top: 5px;
+  color: rgba(255,255,255,.68);
+  font-size: 11px;
+}
+.profile-list a {
+  color: var(--green);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.profile-list a:hover { color: var(--orange); }
+.profile-en {
+  margin-left: 10px;
+  color: var(--muted);
+  font-size: 11px;
+}
+.contact-actions {
+  grid-template-columns: 1fr 1.3fr;
+}
+.contact-item {
+  min-height: 118px;
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #fff;
+  color: var(--green);
+  transition: transform .25s, box-shadow .25s;
+}
+.contact-item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 35px rgba(71,31,12,.18);
+}
+.contact-item small {
+  font-size: 9px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+.contact-item strong {
+  margin-top: 5px;
+  font-size: clamp(14px, 1.45vw, 19px);
+  overflow-wrap: anywhere;
+}
+.contact-item span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 10px;
+}
+.contact-item.contact-mail {
+  color: #fff;
+  background: var(--green);
+}
+.contact-item.contact-mail span { color: rgba(255,255,255,.68); }
+.contact-mobile {
+  grid-column: 1 / 3;
+  min-height: 90px;
+  background: #fff4e8;
+}
+@media (max-width: 760px) {
+  .permit-badge strong { font-size: 14px; }
+  .profile-en { display: block; margin: 3px 0 0; }
+  .contact-actions { grid-template-columns: 1fr; }
+  .contact-mobile { grid-column: auto; }
+}
+
+
+/* Contact information: office telephone only */
+.contact-actions-single {
+  grid-template-columns: minmax(260px, 440px);
+  justify-content: start;
+}
+.contact-actions-single .contact-item {
+  min-height: 118px;
+}
+@media (max-width: 760px) {
+  .contact-actions-single {
+    grid-template-columns: 1fr;
+  }
+}
