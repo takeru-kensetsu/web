@@ -34,4 +34,21 @@
 
   updateHeader();
   year.textContent = new Date().getFullYear();
+
+// 代表写真の右クリック保存・ドラッグ保存を抑止します。
+// ブラウザで表示される画像を完全に取得不能にするものではありません。
+document.querySelectorAll("[data-protected-image]").forEach((element) => {
+  element.addEventListener("contextmenu", (event) => {
+    event.preventDefault();
+  });
+
+  element.addEventListener("dragstart", (event) => {
+    event.preventDefault();
+  });
+
+  element.addEventListener("selectstart", (event) => {
+    event.preventDefault();
+  });
+});
+
 })();
