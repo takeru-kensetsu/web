@@ -5,17 +5,18 @@
   const year = document.getElementById("year");
 
   const updateHeader = () => {
-    header.classList.toggle("is-scrolled", window.scrollY > 25);
+    if (header) header.classList.toggle("is-scrolled", window.scrollY > 25);
   };
 
   const closeMenu = () => {
+    if (!button || !nav) return;
     button.classList.remove("is-open");
     nav.classList.remove("is-open");
     button.setAttribute("aria-expanded", "false");
     button.setAttribute("aria-label", "メニューを開く");
   };
 
-  button.addEventListener("click", () => {
+  if (button && nav) button.addEventListener("click", () => {
     const nextOpen = !nav.classList.contains("is-open");
     button.classList.toggle("is-open", nextOpen);
     nav.classList.toggle("is-open", nextOpen);
@@ -23,7 +24,7 @@
     button.setAttribute("aria-label", nextOpen ? "メニューを閉じる" : "メニューを開く");
   });
 
-  nav.querySelectorAll("a").forEach((link) => {
+  if (nav) nav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
 
@@ -33,7 +34,7 @@
   });
 
   updateHeader();
-  year.textContent = new Date().getFullYear();
+  if (year) year.textContent = new Date().getFullYear();
 
 // 代表写真の右クリック保存・ドラッグ保存を抑止します。
 // ブラウザで表示される画像を完全に取得不能にするものではありません。
