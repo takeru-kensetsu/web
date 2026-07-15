@@ -1282,3 +1282,299 @@ section { scroll-margin-top: 88px; }
     transition: none;
   }
 }
+
+
+/* Privacy policy */
+.footer-legal {
+  margin: 18px 0 0;
+  text-align: right;
+}
+.footer-legal a {
+  color: rgba(255,255,255,.68);
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer-legal a:hover {
+  color: var(--lime);
+}
+.privacy-page {
+  padding: 95px max(5vw, 28px);
+  background: #fff;
+}
+.privacy-page-inner {
+  width: min(960px, 100%);
+  margin: 0 auto;
+}
+.privacy-intro {
+  margin-bottom: 52px;
+  padding: 28px 32px;
+  color: var(--green);
+  background: var(--green-light);
+  font-size: 15px;
+  font-weight: 600;
+}
+.privacy-section {
+  padding: 35px 0;
+  border-bottom: 1px solid var(--line);
+}
+.privacy-section h2 {
+  margin: 0 0 17px;
+  color: var(--green);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: 23px;
+  letter-spacing: .05em;
+}
+.privacy-section p,
+.privacy-section li {
+  color: var(--muted);
+  font-size: 14px;
+}
+.privacy-section p:last-child {
+  margin-bottom: 0;
+}
+.privacy-section ul {
+  margin: 15px 0 0;
+  padding-left: 1.5em;
+}
+.privacy-section li + li {
+  margin-top: 6px;
+}
+.privacy-contact dl {
+  margin: 0;
+  border-top: 1px solid var(--line);
+}
+.privacy-contact dl div {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 20px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--line);
+}
+.privacy-contact dt {
+  color: var(--green);
+  font-size: 13px;
+  font-weight: 800;
+}
+.privacy-contact dd {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+}
+.privacy-date {
+  margin-top: 36px;
+  color: var(--muted);
+  font-size: 12px;
+  text-align: right;
+}
+.privacy-date p {
+  margin: 0;
+}
+@media (max-width: 760px) {
+  .footer-legal {
+    text-align: left;
+  }
+  .privacy-page {
+    padding: 70px 22px;
+  }
+  .privacy-intro {
+    padding: 23px;
+    font-size: 14px;
+  }
+  .privacy-section {
+    padding: 29px 0;
+  }
+  .privacy-section h2 {
+    font-size: 20px;
+  }
+  .privacy-contact dl div {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+}
+
+
+/* Vietnamese recruitment page */
+.recruit-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+}
+.recruit-language-link {
+  margin-top: 26px;
+  color: #fff;
+  background: var(--green);
+  border-color: var(--green);
+}
+.recruit-language-link:hover {
+  color: var(--green);
+  background: #fff;
+}
+.footer-language {
+  margin: 8px 0 0;
+  text-align: right;
+}
+.footer-language a {
+  color: rgba(255,255,255,.68);
+  font-size: 10px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.footer-language a:hover {
+  color: var(--lime);
+}
+.vi-recruit-page {
+  padding: 95px max(5vw, 28px);
+  background: #fff;
+}
+.vi-recruit-inner {
+  width: min(980px, 100%);
+  margin: 0 auto;
+}
+.vi-status {
+  margin-bottom: 28px;
+  padding: 34px;
+  color: #fff;
+  background: var(--orange);
+}
+.vi-status span {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .15em;
+}
+.vi-status h2 {
+  margin: 0 0 12px;
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(27px, 3.8vw, 43px);
+  line-height: 1.45;
+}
+.vi-status p {
+  margin: 0;
+  color: rgba(255,255,255,.86);
+}
+.vi-language-notice {
+  margin-bottom: 58px;
+  padding: 30px 34px;
+  border: 2px solid var(--green);
+  background: var(--green-light);
+}
+.vi-language-notice strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--green);
+  font-size: 20px;
+}
+.vi-language-notice p {
+  color: var(--ink);
+}
+.vi-language-notice .jp-note {
+  margin-bottom: 0;
+  padding-top: 14px;
+  border-top: 1px solid rgba(13,75,63,.22);
+  color: var(--green);
+  font-weight: 800;
+}
+.vi-section {
+  padding: 44px 0;
+  border-bottom: 1px solid var(--line);
+}
+.vi-section h2 {
+  margin: 0 0 19px;
+  color: var(--green);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(26px, 3.3vw, 39px);
+  letter-spacing: .03em;
+}
+.vi-section > p:not(.detail-kicker) {
+  color: var(--muted);
+  font-size: 15px;
+}
+.vi-card-grid {
+  margin-top: 25px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+.vi-card-grid div {
+  padding: 26px;
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+.vi-card-grid h3 {
+  margin: 0 0 12px;
+  color: var(--green);
+  font-size: 18px;
+}
+.vi-card-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.vi-small-note {
+  margin: 22px 0 0;
+  padding: 18px 20px;
+  background: var(--green-light);
+  font-size: 13px !important;
+}
+.vi-check-list {
+  margin: 22px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+.vi-check-list li {
+  position: relative;
+  padding: 14px 18px 14px 46px;
+  color: var(--muted);
+  background: var(--cream);
+  border: 1px solid var(--line);
+}
+.vi-check-list li::before {
+  content: "✓";
+  position: absolute;
+  left: 17px;
+  top: 13px;
+  color: var(--orange);
+  font-weight: 900;
+}
+.vi-contact-note {
+  margin-top: 22px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  color: #fff;
+  background: var(--green);
+}
+.vi-contact-note strong {
+  font-size: 19px;
+}
+.vi-contact-note span {
+  color: rgba(255,255,255,.72);
+  font-size: 13px;
+}
+@media (max-width: 760px) {
+  .recruit-links {
+    align-items: stretch;
+  }
+  .recruit-links .outline-link {
+    width: 100%;
+  }
+  .footer-language {
+    text-align: left;
+  }
+  .vi-recruit-page {
+    padding: 70px 22px;
+  }
+  .vi-status,
+  .vi-language-notice {
+    padding: 25px;
+  }
+  .vi-card-grid {
+    grid-template-columns: 1fr;
+  }
+}
