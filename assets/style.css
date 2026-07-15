@@ -1626,3 +1626,56 @@ section { scroll-margin-top: 88px; }
   inset: 0;
   background: transparent;
 }
+
+
+/* Balanced representative signature layout */
+.message-signature {
+  width: min(100%, 410px);
+  margin: 48px 0 0 auto;
+  padding: 27px 18px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+.message-signature > small {
+  margin-bottom: 3px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .12em;
+}
+.message-signature .signature-role {
+  margin: 0 0 5px;
+  color: var(--ink);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+.signature-image-protected {
+  width: min(92%, 315px);
+  height: 96px;
+  margin: 1px auto 2px;
+  background-position: center center;
+  background-size: contain;
+  transform: rotate(-0.4deg);
+}
+.message-signature .signature-roman {
+  margin-top: 1px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 400;
+  letter-spacing: .08em;
+}
+@media (max-width: 760px) {
+  .message-signature {
+    width: min(100%, 360px);
+    margin: 40px auto 0;
+    padding-inline: 10px;
+  }
+  .signature-image-protected {
+    width: min(90%, 285px);
+    height: 86px;
+  }
+}
