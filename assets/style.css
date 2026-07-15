@@ -1223,3 +1223,62 @@ section { scroll-margin-top: 88px; }
     align-items: stretch;
   }
 }
+
+
+/* Floating page-top button */
+.floating-page-top {
+  position: fixed;
+  right: 26px;
+  bottom: 26px;
+  z-index: 80;
+  width: 64px;
+  height: 64px;
+  padding: 0;
+  display: grid;
+  place-content: center;
+  gap: 1px;
+  color: #fff;
+  background: var(--green);
+  border: 1px solid rgba(255,255,255,.3);
+  border-radius: 50%;
+  box-shadow: 0 12px 28px rgba(5,42,36,.24);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  cursor: pointer;
+  transition: opacity .25s, visibility .25s, transform .25s, background .25s;
+}
+.floating-page-top span {
+  font-size: 22px;
+  line-height: 1;
+}
+.floating-page-top small {
+  font-size: 8px;
+  font-weight: 900;
+  letter-spacing: .12em;
+}
+.floating-page-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+.floating-page-top:hover {
+  background: var(--orange);
+}
+.floating-page-top:focus-visible {
+  outline: 3px solid var(--lime);
+  outline-offset: 3px;
+}
+@media (max-width: 760px) {
+  .floating-page-top {
+    right: 16px;
+    bottom: 16px;
+    width: 56px;
+    height: 56px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .floating-page-top {
+    transition: none;
+  }
+}

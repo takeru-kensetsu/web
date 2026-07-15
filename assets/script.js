@@ -51,4 +51,28 @@ document.querySelectorAll("[data-protected-image]").forEach((element) => {
   });
 });
 
+
+  const pageTopButton = document.querySelector("[data-page-top]");
+
+  const updatePageTopButton = () => {
+    if (!pageTopButton) return;
+    pageTopButton.classList.toggle("is-visible", window.scrollY > 420);
+  };
+
+  if (pageTopButton) {
+    pageTopButton.addEventListener("click", () => {
+      const reducedMotion = window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches;
+
+      window.scrollTo({
+        top: 0,
+        behavior: reducedMotion ? "auto" : "smooth",
+      });
+    });
+
+    window.addEventListener("scroll", updatePageTopButton, { passive: true });
+    updatePageTopButton();
+  }
+
 })();
