@@ -1087,3 +1087,139 @@ section { scroll-margin-top: 88px; }
     width: min(100%, 480px);
   }
 }
+
+
+/* Recruitment status */
+.recruit-status {
+  width: fit-content;
+  margin: 0 0 18px;
+  padding: 8px 14px;
+  color: #fff;
+  background: var(--orange);
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .06em;
+}
+.outline-link-disabled {
+  opacity: .68;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Business and policy detail pages */
+.detail-page {
+  padding: 95px max(5vw, 28px);
+  background: #fff;
+}
+.detail-page-inner {
+  width: min(1040px, 100%);
+  margin: 0 auto;
+}
+.detail-intro {
+  max-width: 850px;
+  margin-bottom: 58px;
+}
+.detail-kicker {
+  margin-bottom: 12px;
+  color: var(--orange);
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: .18em;
+}
+.detail-intro h2 {
+  margin: 0 0 25px;
+  color: var(--green);
+  font-family: "Yu Mincho", "Hiragino Mincho ProN", serif;
+  font-size: clamp(30px, 4.2vw, 52px);
+  line-height: 1.55;
+  letter-spacing: .07em;
+}
+.detail-intro > p:last-child {
+  color: var(--muted);
+  font-size: 15px;
+}
+.detail-grid,
+.policy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.detail-grid article,
+.policy-grid article {
+  padding: 30px;
+  border: 1px solid var(--line);
+  background: var(--cream);
+}
+.detail-grid h3,
+.policy-grid h3 {
+  margin: 0 0 13px;
+  color: var(--green);
+  font-family: "Yu Mincho", serif;
+  font-size: 20px;
+}
+.detail-grid p,
+.policy-grid p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+.policy-grid article span {
+  display: block;
+  margin-bottom: 20px;
+  color: var(--orange);
+  font: 900 25px/1 Arial, sans-serif;
+}
+.detail-note {
+  margin-top: 42px;
+  padding: 34px;
+  color: #fff;
+  background: var(--green);
+}
+.detail-note strong {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--lime);
+  font-family: "Yu Mincho", serif;
+  font-size: 22px;
+}
+.detail-note p {
+  margin: 0;
+  color: rgba(255,255,255,.76);
+  font-size: 14px;
+}
+.detail-cta {
+  margin-top: 45px;
+  padding: 28px 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  background: var(--green-light);
+}
+.detail-cta p {
+  margin: 0;
+  color: var(--green);
+  font-weight: 700;
+}
+.detail-cta .outline-link {
+  margin-top: 0;
+  flex: 0 0 auto;
+}
+@media (max-width: 760px) {
+  .detail-page {
+    padding: 70px 22px;
+  }
+  .detail-grid,
+  .policy-grid {
+    grid-template-columns: 1fr;
+  }
+  .detail-grid article,
+  .policy-grid article {
+    padding: 25px;
+  }
+  .detail-cta {
+    padding: 25px;
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
