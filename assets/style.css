@@ -1578,3 +1578,9 @@ section { scroll-margin-top: 88px; }
     grid-template-columns: 1fr;
   }
 }
+
+
+/* Show up to five What's New items */
+.news-list .news-item:nth-child(n + 6) {
+  display: none;
+}
