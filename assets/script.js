@@ -76,4 +76,19 @@ document.querySelectorAll("[data-protected-image]").forEach((element) => {
     updatePageTopButton();
   }
 
+
+  document.querySelectorAll("[data-protected-signature]").forEach((element) => {
+    element.addEventListener("contextmenu", (event) => {
+      event.preventDefault();
+    });
+
+    element.addEventListener("dragstart", (event) => {
+      event.preventDefault();
+    });
+
+    element.addEventListener("selectstart", (event) => {
+      event.preventDefault();
+    });
+  });
+
 })();
